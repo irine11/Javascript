@@ -11,19 +11,10 @@ Task 2:
     გვაქვს სტუდენტების სახელების მასივი['John', 'Sam', 'Ann', 'Will', 'Andrew', 'Joseph', 'Lorelai', 'Amelie', 'Den']
 დალოგეთ სიის ზუსტად შუაში მყოფი სახელი.
 */
-let studentName = [
-  "John",
-  "Sam",
-  "Ann",
-  "Will",
-  "Andrew",
-  "Joseph",
-  "Lorelai",
-  "Amelie",
-  "Den",
-];
+let studentName = ["John", "Sam","Ann","Will","Andrew", "Joseph","Lorelai",  "Amelie","Den"];
+  
 console.log(studentName[Math.floor(studentName.length / 2)]);
-
+ 
 /*
     Task 3 : 
     Part 1 : შექმენით სტუდენტის ობიექტი , რომელსაც აქვს 5 property : firstName; lastName; age; subjects; roommate;
