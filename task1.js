@@ -4,7 +4,7 @@ let userAge = 28;
 let brotherAge = 21;
 
 let ageGap = userAge - brotherAge;
-console.log(userName + " არის " + ageGap + " წლით უფროსი " + brotherName);
+
 console.log(`${userName} არის ${ageGap} წლით უფროსი ${brotherName}`);
 /*
 Task 2:
