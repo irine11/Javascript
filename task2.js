@@ -1,53 +1,53 @@
-//Task 1
-/*
-    შექმენით ფუნქცია რომელსაც აქვს ერთი პარამეტრი . 
-    ფუნქციას გადაეცით ობიექტი არგუმეტნად 
+// //Task 1
+// /*
+//     შექმენით ფუნქცია რომელსაც აქვს ერთი პარამეტრი . 
+//     ფუნქციას გადაეცით ობიექტი არგუმეტნად 
     
-    let sampleObject = {
-        isItarable : false,
-        sampleArray : [12,63,21,34,98,57]
-    }
-    თუ მიღებული არგუმენტის isItarable მნიშვნელობა არის ჭეშმარიტი მაშინ დალოგეთ თითოეული ელემენტი
-    თუ არ არის ჭეშმარიტი გამოიტანეთ წინადადება "provided array isn't itarable"
-*/
-function getObject(sampleObject) {
-  if (sampleObject.isIterable == true) {
-    console.log("provided array is iterable");
-    for (key of sampleObject.sampleArray) console.log(key);
-  } else {
-    console.log("provided array isn't iterable");
-  }
-}
+//     let sampleObject = {
+//         isItarable : false,
+//         sampleArray : [12,63,21,34,98,57]
+//     }
+//     თუ მიღებული არგუმენტის isItarable მნიშვნელობა არის ჭეშმარიტი მაშინ დალოგეთ თითოეული ელემენტი
+//     თუ არ არის ჭეშმარიტი გამოიტანეთ წინადადება "provided array isn't itarable"
+// */
+// function getObject(sampleObject) {
+//   if (sampleObject.isIterable == true) {
+//     console.log("provided array is iterable");
+//     for (key of sampleObject.sampleArray) console.log(key);
+//   } else {
+//     console.log("provided array isn't iterable");
+//   }
+// }
 
-let sampleObjectNonIterable = {
-  isIterable: false,
-  sampleArray: { foo: "bar" },
-};
+// let sampleObjectNonIterable = {
+//   isIterable: false,
+//   sampleArray: { foo: "bar" },
+// };
 
-let sampleObjectIterable = {
-  isIterable: true,
-  sampleArray: [12, 63, 21, 34, 98, 57],
-};
+// let sampleObjectIterable = {
+//   isIterable: true,
+//   sampleArray: [12, 63, 21, 34, 98, 57],
+// };
 
-// getObject(sampleObjectNonIterable);
-// getObject(sampleObjectIterable);
+// // getObject(sampleObjectNonIterable);
+// // getObject(sampleObjectIterable);
 
-//Task 2
-/*
-    შექმენით ფუნქცია checkPythagoras რომელიც მიიღებს სამ პარამეტრს x,y,z .
-    ფუნქციამ უნდა შეამოწმოს თუ აღნიშნული რიცხვების რომელიმე კომბინაცია მაინც
-    აკმაყოფილებს პითაგორას თეორემის პირობას a^2 + b^2 = c^2;
-    თუ კი ეს პირობა დაკმაყოფილდა ფუნქციამ უნდა დააბრუნოს true 
-    წინააღმდეგ შემთხვევაში false
+// //Task 2
+// /*
+//     შექმენით ფუნქცია checkPythagoras რომელიც მიიღებს სამ პარამეტრს x,y,z .
+//     ფუნქციამ უნდა შეამოწმოს თუ აღნიშნული რიცხვების რომელიმე კომბინაცია მაინც
+//     აკმაყოფილებს პითაგორას თეორემის პირობას a^2 + b^2 = c^2;
+//     თუ კი ეს პირობა დაკმაყოფილდა ფუნქციამ უნდა დააბრუნოს true 
+//     წინააღმდეგ შემთხვევაში false
     
-*/
-function checkPythagoras(x, y, z) {
-  if ((x ^ 2) + (y ^ 2) == (z ^ 2)) {
-    console.log(true);
-  } else {
-    console.log(false);
-  }
-}
+// */
+// function checkPythagoras(x, y, z) {
+//   if ((x ^ 2) + (y ^ 2) == (z ^ 2)) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   }
+// }
 
 // checkPythagoras(4, 3, 5);
 // checkPythagoras(4, 3, 6);
@@ -59,46 +59,57 @@ function checkPythagoras(x, y, z) {
     მაგ : [2,14,25,75,11,6] თუ კი ამ მასივს გადავცემთ არგუმენტის სახით ფუნქციამ უნდა
     დააბრუნოს "Min value is 2 and Max value is 75"
 */
-// let array = [2, 14, 25, 75, 11, 6];
+// let myArray = [2, 14, 25, 75, 11, 6];
 
-// function getMinMax(x) {
-//   for (key of x) {
-//     console.log(key);
+// let minElement = myArray[0];
+// for (let i = 1; i < myArray.Length; ++i) {
+//   if (myArray[i] < minElement) {
+//     minElement = myArray[i];
 //   }
 // }
-
-// getMinMax(array);
-
-let arrayToGetMinMax = [2, 14, 25, 75, 11, 6];
-getMinMax(arrayToGetMinMax);
-
-function arrayMin(array) {
-  let len = array.length;
-  let min = Infinity;
-  while (len--) {
-    if (array[len] < min) {
-      min = array[len];
-    }
+// console.log(minElement);
+let myArray = [2, 14, 25, 75, 11, 6];
+let maxElement = myArray[0];
+for (let i = 1; i < myArray.length; ++i) {
+  if (myArray[i] > maxElement) {
+    maxElement = myArray[i];
   }
-  return min;
 }
 
-function arrayMax(array) {
-  let len = array.length;
-  let max = -Infinity;
-  while (len--) {
-    if (array[len] > max) {
-      max = array[len];
-    }
-  }
-  return max;
-}
+console.log(maxElement);
 
-function getMinMax(x) {
-  let min = arrayMin(x);
-  let max = arrayMax(x);
-  console.log(`Min value is ${min} and Max value is ${max}`);
-}
+
+
+// let arrayToGetMinMax = [2, 14, 25, 75, 11, 6];
+// getMinMax(arrayToGetMinMax);
+
+// function arrayMin(array) {
+//   let len = array.length;
+//   let min = Infinity;
+//   while (len--) {
+//     if (array[len] < min) {
+//       min = array[len];
+//     }
+//   }
+//   return min;
+// }
+
+// function arrayMax(array) {
+//   let len = array.length;
+//   let max = -Infinity;
+//   while (len--) {
+//     if (array[len] > max) {
+//       max = array[len];
+//     }
+//   }
+//   return max;
+// }
+
+// function getMinMax(x) {
+//   let min = arrayMin(x);
+//   let max = arrayMax(x);
+//   console.log(`Min value is ${min} and Max value is ${max}`);
+// }
 
 //Task 4
 
@@ -112,6 +123,8 @@ Obtuse angle: An angle between 90 and 180 degrees.
 Straight angle: A 180 degree angle.
 
 */
+
+if (angle==)
 
 //Task 5
 /*
