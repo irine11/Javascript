@@ -1,8 +1,8 @@
 // //Task 1
 // /*
-//     შექმენით ფუნქცია რომელსაც აქვს ერთი პარამეტრი . 
-//     ფუნქციას გადაეცით ობიექტი არგუმეტნად 
-    
+//     შექმენით ფუნქცია რომელსაც აქვს ერთი პარამეტრი .
+//     ფუნქციას გადაეცით ობიექტი არგუმეტნად
+
 //     let sampleObject = {
 //         isItarable : false,
 //         sampleArray : [12,63,21,34,98,57]
@@ -37,9 +37,9 @@
 //     შექმენით ფუნქცია checkPythagoras რომელიც მიიღებს სამ პარამეტრს x,y,z .
 //     ფუნქციამ უნდა შეამოწმოს თუ აღნიშნული რიცხვების რომელიმე კომბინაცია მაინც
 //     აკმაყოფილებს პითაგორას თეორემის პირობას a^2 + b^2 = c^2;
-//     თუ კი ეს პირობა დაკმაყოფილდა ფუნქციამ უნდა დააბრუნოს true 
+//     თუ კი ეს პირობა დაკმაყოფილდა ფუნქციამ უნდა დააბრუნოს true
 //     წინააღმდეგ შემთხვევაში false
-    
+
 // */
 // function checkPythagoras(x, y, z) {
 //   if ((x ^ 2) + (y ^ 2) == (z ^ 2)) {
@@ -77,8 +77,6 @@ for (let i = 1; i < myArray.length; ++i) {
 }
 
 console.log(maxElement);
-
-
 
 // let arrayToGetMinMax = [2, 14, 25, 75, 11, 6];
 // getMinMax(arrayToGetMinMax);
@@ -124,8 +122,21 @@ Straight angle: A 180 degree angle.
 
 */
 
-if (angle==)
-
+function myFunction(number) {
+  if (number > 0 && number < 90) {
+    return "Acute angle";
+  } else if (number === 90) {
+    return "Right angle";
+  } else if (number > 90 && number < 180) {
+    return "Obtuse angle";
+  } else if (number === 180) {
+    return "Straight angle";
+  }
+}
+console.log(myFunction(20));
+console.log(myFunction(90));
+console.log(myFunction(120));
+console.log(myFunction(180));
 //Task 5
 /*
     დაწერეთ ფუნქცია checkStudentGrade რომელიც მიიღებს ობიექტების მასივს. 
@@ -145,3 +156,4 @@ if (angle==)
 
 
 */
+function (checkStudentGrade)
